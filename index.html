@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zifan Wang - Homepage</title>
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+
+  <div class="parent">
+    <!-- Ctrl+/ to turn selected lines to comment -->
+    <!-- Shift+Ctrl+P to enter command -->
+    <!-- .container>header>h1+h2 -->
+    <header>
+      <!-- Left portion of the header-->
+      <div class="leftheader">
+
+        <div class="upperheader">
+          <h1 class="width20">Zifan Wang</h1>
+          
+          <p class="width80">An enthusiast in data engineering, data analytics, transportation and location modeling, cartography</p>
+        </div>
+        <br>
+        <p>zwang.geog@gmail.com | <a href="https://www.linkedin.com/in/zifan-wang-geog/">LinkedIn Profile</a></p>
+        
+
+      </div>
+      <!-- Right portion of the header-->
+      <div class="rightheader">
+        <a href="index.html">Home Page</a>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="pages/location.html">Facility Location Siting</a>
+        </li>
+        <li>
+          <a href="pages/transportation.html">Transportation Modeling</a>
+        </li>
+        <li>
+          <a href="pages/mapping.html">Mapping</a>
+        </li>
+        <li>
+          <a href="pages/data_engineering.html">Geospatial Data Engineering</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images/san_jose_covering_research_image.jpg" class="slideimg" alt="Theoretically siting the least number of recycling centers among a set of candidate potential facilities in San Jose while ensuring all convenience zones (demands) are within 0.5 mile from at least one sited facility">
+          <div class="text">
+            <h3>Facility Location Siting</h3>
+            <p>Imagining a city or firm needs to decide the locations of new bike-share dock stations (or perhaps cell phone towers). How can we site the system of stations such that as much as potential customers can be served (or some other similar metrics) given the limited budget we have? I have involved in several research projects that aim to mathematically formulate and solve such a problem</p>
+            <a href="pages/location.html" class="learnmore">Learn More</a>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/shared_ride_with_walking_trip_leg.png" class="slideimg" alt="The straighten of vehicle route by enabling short-distance walking in a ride-sharing service">
+          <div class="text">
+            <h3>Transportation Modeling</h3>
+            <p>Have you carpooled with other people in urban centers like Manhattan or Chicago downtown? Such urban centers often are characterized by one-way streets and small city blocks that may entail vehicle detours while picking up or dropping off travelers in a shared-ride service. How about reducing vehicle detours by enabling short-distance walkings in planning vehicle routes? I have involved several projects that aim to solve such a problem, either assuming demands known in advance (static) or demands revealed over time (dynamic)</p>
+            <a href="pages/transportation.html" class="learnmore">Learn More</a>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Zifan183_finalProject_forPublish.png" class="slideimg" alt="San Francisco Bay Area Household Income Map">
+          <div class="text">
+            <h3>Mapping</h3>
+            <p>Mapping geospatial data (cartography) can give people a fresh view about the issue at hand</p>
+            <a href="pages/mapping.html" class="learnmore">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script src="js/slideshow.js"></script>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
